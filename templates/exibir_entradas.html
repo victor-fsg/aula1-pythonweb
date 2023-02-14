@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Meu Blog</title>
+    </head>
+    <body>
+        <h1>Meu blog</h1>
+        {% for entrada in entradas %}
+            <h2>{{ entrada['titulo'] }}</h2>
+            <p>{{ entrada['texto'] }}</p>
+        {% endfor %}
+
+    </body>
+</html>
